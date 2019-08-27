@@ -1,0 +1,27 @@
+// Grayscale
+$white: #ffffff !default;
+$gray-100: #f5f5f5;
+$gray-300: #e7e7e7;
+$gray-500: #8c8c8c;
+$gray-700: #404040;
+$gray-800: #343b43;
+$black: #000000 !default;
+
+// Brand colors
+$primary: #5558db;
+$secondary: $gray-100;
+$accent: #0b162b;
+$info: #5695fe;
+$success: #51b37f;
+$warning: #f27121;
+$danger: #e24c4c;
+$light: $white;
+$dark: $gray-800;
+$white: #ffffff;
+
+// Adding new color to default Bootstrap's $theme-colors map
+$theme-colors: ("primary": $primary, "accent": $accent);
+
+// Theme gradient
+$gradient-color-1: $primary !default;
+$gradient-color-2: $accent !default;

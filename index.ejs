@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+  <!-- Intro section -->
+  <section class="intro py-0">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2">
+          <div class="owl-carousel " data-arrow="false" data-dots="false" data-items="1">
+            <div class="item vh-sm-25 vh-md-75 vh-lg-100 vh-xl-100">
+              <img src="<%=require('./assets/images/image1.jpg')%>" alt="">
+            </div>
+            <div class="item vh-sm-25 vh-md-75 vh-lg-100 vh-xl-100">
+              <img src="<%=require('./assets/images/image2.jpg')%>" alt="">
+            </div>
+            <div class="item vh-sm-25 vh-md-75 vh-lg-100 vh-xl-100">
+              <img src="<%=require('./assets/images/image3.jpg')%>" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 bg-access">
+          hello
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
