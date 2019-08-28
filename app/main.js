@@ -1,12 +1,81 @@
-(function($) {
-	'use strict';
-	// Owl Carousel
+var swiperSlider = (function() {
+	if ($('.swiper-slider-fade').length !== 0) {
+		var swiper = new Swiper('.swiper-container', {
+			effect: 'fade', //other supported effects: coverflow, flip, cube, slide
+			pagination: null,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			autoplay: 5000,
+			speed: 1000,
+			spaceBetween: 0,
+			loop: true,
+			simulateTouch: true,
+			onSlideChangeEnd: function(swiper) {
+				$('.swiper-slide').each(function() {
+					if ($(this).index() === swiper.activeIndex) {
+						// Fadein in active slide
+						$(this).find('.slider-content').fadeIn(25);
+					} else {
+						// Fadeout in inactive slides
+						$(this).find('.slider-content').fadeOut(25);
+					}
+				});
+			}
+		});
+	}
+})();
 
-	var owlCarousel = $('.owl-carousel');
-	if (owlCarousel.length < 1) {
+//
+// Sticky Navbar
+//
+
+var NavbarSticky = (function() {
+	// Variables
+
+	var $nav = $('.nav-stick');
+
+	// Methods
+
+	function init($this) {
+		var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+
+		// if we've scrolled more than the navigation, change its position to fixed to stick to top,
+		// otherwise change it back to relative
+		if (scrollTop > navOffsetTop + 200) {
+			$this.addClass('navbar-sticky-on');
+		} else {
+			$this.removeClass('navbar-sticky-on');
+		}
+	}
+
+	// Events
+
+	if ($nav.length) {
+		var navOffsetTop = $nav.offset().top;
+
+		// Init sticky navbar
+		init($nav);
+
+		// re-calculate stickyness on scroll
+		$(window).on({
+			scroll: function() {
+				init($nav);
+			}
+		});
+	}
+})();
+
+// BEGIN: 05 Owl Carousel
+var owlCarousel = (function() {
+	var $carousel = $('.owl-carousel');
+	if ($carousel.length < 1) {
 		return true;
 	}
-	owlCarousel.each(function() {
+	$carousel.each(function() {
 		var slider = $(this);
 		var sliderArrow = slider.attr('data-arrow') == 'false' ? false : true; //option: true or false
 		var sliderDots = slider.attr('data-dots') == 'false' ? false : true; //option: true or false
@@ -80,39 +149,4 @@
 			}
 		});
 	});
-
-	// END: Owl Carousel
-
-	// BEGIN: 06 Swiper Slider
-	var swiperSlider = function() {
-		if ($('.swiper-slider-fade').length !== 0) {
-			var swiper = new Swiper('.swiper-container', {
-				effect: 'fade', //other supported effects: coverflow, flip, cube, slide
-				pagination: null,
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev'
-				},
-				nextButton: '.swiper-button-next',
-				prevButton: '.swiper-button-prev',
-				autoplay: 5000,
-				speed: 1000,
-				spaceBetween: 0,
-				loop: true,
-				simulateTouch: true,
-				onSlideChangeEnd: function(swiper) {
-					$('.swiper-slide').each(function() {
-						if ($(this).index() === swiper.activeIndex) {
-							// Fadein in active slide
-							$(this).find('.slider-content').fadeIn(25);
-						} else {
-							// Fadeout in inactive slides
-							$(this).find('.slider-content').fadeOut(25);
-						}
-					});
-				}
-			});
-		}
-	};
-	// END: Swiper Slider
-})(jQuery);
+})();

@@ -1,0 +1,46 @@
+.owl-carousel {
+	.owl-dots {
+		margin-bottom: 20px;
+		margin-top: 20px;
+		position: relative;
+		.owl-dot {
+			display: inline-block;
+			zoom: 1;
+			display: inline;
+			span {
+				position: relative;
+				display: block;
+				float: left;
+				margin: 0 4px;
+				width: 12px;
+				height: 12px;
+				cursor: pointer;
+				border-radius: 50%;
+				overflow: hidden;
+				background-color: transparent;
+				box-shadow: inset 0 0 0 2px #f0f1f3;
+				transition: background 0.3s ease;
+				&:after {
+					outline: medium none;
+					text-indent: -999em;
+					border-radius: 3px;
+					overflow: hidden;
+					content: '';
+					position: absolute;
+					bottom: 0;
+					height: 0;
+					left: 0;
+					width: 100%;
+					background-color: #f0f1f3;
+					box-shadow: 0 0 1px #f0f1f3;
+					transition: height 0.3s ease;
+				}
+			}
+			&.active {
+				span:after {
+					height: 100%;
+				}
+			}
+		}
+	}
+}

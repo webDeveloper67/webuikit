@@ -1,0 +1,32 @@
+// Social Buttons
+
+.social-btn {
+	display: inline-block;
+	width: $social-button-box-size;
+	height: $social-button-box-size;
+	margin: 0;
+	transition: $social-button-transition;
+	font-size: $social-button-font-size;
+	line-height: $social-button-box-size;
+	vertical-align: middle;
+	text: {
+		align: center !important;
+		decoration: none;
+	}
+}
+
+.sb-style-6,
+.sb-style-7 {
+	border: 3px solid $border-color;
+	border-radius: 50%;
+	line-height: ($social-button-box-size - .3125);
+	&.sb-light-skin {
+		border-color: rgba($white, .18);
+	}
+	&:hover,
+	&.hover {
+		border-color: transparent;
+		background-color: $white;
+		box-shadow: $social-btn-box-shadow;
+	}
+}

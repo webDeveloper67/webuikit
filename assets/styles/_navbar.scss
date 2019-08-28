@@ -1,0 +1,36 @@
+// Boxed / Floating Header
+.nav-float {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	z-index: $zindex-fs-overlay;
+}
+
+.nav-float .navbar > .container {
+	background: #ffffff;
+	border-radius: 3px;
+}
+
+@media (max-width: 991.98px) {
+	.nav-float .navbar > .container {
+		padding: 0 15px !important;
+	}
+	.navbar-sticky-on.nav-float .navbar > .container {
+		padding: 0 !important;
+	}
+}
+
+/*Header sticky*/
+.navbar-sticky-on {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
+	-webkit-animation: fadeInDown .5s;
+	animation: fadeInDown .5s;
+	width: 100%;
+	box-shadow: 0px 0px 40px rgba(83, 88, 93, 0.2);
+}
