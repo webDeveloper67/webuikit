@@ -36,7 +36,7 @@ var swiperSlider = (function() {
 var NavbarSticky = (function() {
 	// Variables
 
-	var $nav = $('.nav-stick');
+	var $nav = $('.navbar-sticky');
 
 	// Methods
 
