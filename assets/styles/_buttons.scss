@@ -1,0 +1,126 @@
+//
+// Buttons
+// --------------------------------------------------
+
+// Basic Styles
+// --------------------------------------------------
+
+.btn {
+	position: relative;
+	height: $btn-height;
+	transform: translateZ(0);
+	border: 0;
+	font-size: $button-font-size;
+	letter-spacing: $btn-letter-spacing;
+	cursor: pointer;
+	z-index: 1;
+
+	text: {
+		transform: $btn-text-transform;
+		decoration: none;
+	}
+
+	touch-action: manipulation;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		box-shadow: none;
+	}
+
+	&::before,
+	&::after {
+		transition: .2s;
+	}
+
+	&:active,
+	&:active::before,
+	&:active::after {
+		transition: .12s !important;
+	}
+
+	> i,
+	> img {
+		display: inline-block;
+		font-size: 1.1em;
+		vertical-align: middle;
+	}
+
+	> img {
+		width: 1.25rem;
+
+		margin: {
+			top: -($spacer * .0625);
+			right: ($spacer * .375);
+		}
+	}
+
+	// Disabled
+	&[disabled],
+	&.disabled {
+		cursor: not-allowed;
+
+		&:hover {
+			box-shadow: none !important;
+		}
+	}
+
+	// Button sizes
+	&.btn-lg {
+		height: $btn-height-lg;
+		font-size: $button-font-size-lg;
+	}
+
+	&.btn-sm {
+		height: $btn-height-sm;
+		font-size: $button-font-size-sm;
+	}
+
+	&.btn-xs {
+		height: $btn-height-xs;
+		padding: $btn-padding-y-xs $btn-padding-x-xs;
+		font-size: $button-font-size-xs;
+		line-height: $btn-line-height-xs;
+	}
+}
+
+.btn-warning,
+.btn-gradient {
+	color: $white;
+}
+
+.btn-secondary,
+.btn-light {
+	color: $body-color !important;
+}
+
+.btn-gradient {
+	@extend .bg-gradient;
+
+	&:hover {
+		color: $white;
+		box-shadow: 0 12px 18.8px 1.2px rgba($primary, .24);
+	}
+
+	&:active {
+		box-shadow: 0 6px 8px .2px rgba($gray-700, .24) !important;
+	}
+}
+
+// Tag Cloud Widget
+.tag-link {
+	display: inline-block;
+	padding: .3125rem .75rem;
+	transition: color .25s;
+	color: $white;
+	font-size: ($font-size-base * .6875);
+	font-weight: 600;
+	text-decoration: none;
+	box-shadow: $card-box-shadow;
+	z-index: 1;
+	&:hover,
+	&.active {
+		text-decoration: none;
+		color: $gray-500;
+	}
+}

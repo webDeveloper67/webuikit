@@ -62,3 +62,53 @@ $zindex-offcanvas-toggle: 1090;
 $zindex-scroll-top-btn: 1050;
 $zindex-navbar: 900;
 $zindex-header: 99;
+
+//== Buttons
+// -------------------------------------------------------
+
+$btn-height-lg: 54px !default;
+$btn-height: 44px !default;
+$btn-height-sm: 32px !default;
+$btn-height-xs: 24px !default;
+
+$btn-padding-y: 0;
+$btn-padding-x: 1.75rem;
+$btn-line-height: $btn-height;
+
+$btn-padding-y-xs: 0 !default;
+$btn-padding-x-xs: .75rem !default;
+$btn-line-height-xs: $btn-height-xs !default;
+
+$btn-padding-y-sm: 0;
+$btn-padding-x-sm: 1.25rem;
+$btn-line-height-sm: $btn-height-sm;
+
+$btn-padding-y-lg: 0;
+$btn-padding-x-lg: 2rem;
+$btn-line-height-lg: $btn-height-lg;
+
+$button-font-size-lg: ($font-size-base * .8125) !default;
+$button-font-size: $font-size-sm !default;
+$button-font-size-sm: ($font-size-base * .6875) !default;
+$button-font-size-xs: $font-size-xs !default;
+
+$btn-font-weight: bold;
+$btn-text-transform: uppercase !default;
+$btn-letter-spacing: .1em !default;
+
+$btn-transition: all .3s !important;
+
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-disabled-opacity: .5;
+
+//== Shadow
+// -------------------------------------------------------
+$card-box-shadow: 0 .75rem 1.25rem .0625rem rgba($gray-700, .09) !default;
+
+//== Icon Box
+// -------------------------------------------------------
+
+$icon-box-max-width: 400px !default;
+$icon-box-icon-size: 70px !default;

@@ -1,0 +1,21 @@
+// Gradient background
+@mixin gradient-background($gradient-from: $gradient-color-1, $gradient-to: $gradient-color-2) {
+	background: $gradient-from !important;
+	background: linear-gradient(
+		to right,
+		$gradient-from 0%,
+		$gradient-from 20%,
+		$gradient-to 100%
+	) !important;
+}
+
+// Vertical gradient background
+@mixin gradient-background-vertical($gradient-from: $gradient-color-1, $gradient-to: $gradient-color-2) {
+	background: $gradient-from !important;
+	background: linear-gradient(
+		to bottom,
+		$gradient-from 0%,
+		$gradient-from 20%,
+		$gradient-to 100%
+	) !important;
+}

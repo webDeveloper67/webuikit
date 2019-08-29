@@ -1,6 +1,5 @@
 .dropdown-menu {
 	box-shadow: 0px 20px 30px rgba(83, 88, 93, 0.15);
-	border: none;
 	.dropdown-item {
 		font-weight: 400;
 		text-transform: capitalize;
@@ -28,7 +27,8 @@
 	top: 10px;
 }
 
-@media (min-width: 992px) {
+// @media (min-width: 992px)
+@include media-breakpoint-up(lg) {
 	.navbar-nav .dropdown-menu {
 		top: 120%;
 		visibility: hidden;

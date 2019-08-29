@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>cursor</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-1" transform="translate(-255.000000, -938.000000)" fill="#5558DB">
+            <g id="Header/1/Dark">
+                <g id="Left-Content" transform="translate(255.000000, 312.000000)">
+                    <g id="more-about" transform="translate(0.000000, 625.000000)">
+                        <g id="cursor" transform="translate(0.000000, 1.000000)">
+                            <path d="M8,0 C3.570313,0 0,3.570313 0,8 L0,12 C0,16.429688 3.570313,20 8,20 C12.429688,20 16,16.429688 16,12 L16,8 C16,3.570313 12.429688,0 8,0 Z M8,2 C11.371094,2 14,4.628906 14,8 L14,12 C14,15.371094 11.371094,18 8,18 C4.628906,18 2,15.371094 2,12 L2,8 C2,4.628906 4.628906,2 8,2 Z M8,4 L5,7 L7,7 L7,9 L5,9 L8,12 L11,9 L9,9 L9,7 L11,7 L8,4 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

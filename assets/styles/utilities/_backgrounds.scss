@@ -1,3 +1,10 @@
 .bg-access {
 	background-color: $accent;
 }
+// Gradient background
+.bg-gradient {
+	@include gradient-background($gradient-color-1, $gradient-color-2);
+}
+.bg-gradient-vertical {
+	@include gradient-background-vertical($gradient-color-1, $gradient-color-2);
+}

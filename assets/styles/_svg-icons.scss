@@ -1,0 +1,14 @@
+.icon {
+	flex-shrink: 0;
+	width: auto;
+	height: $spacer;
+	&.icon-md {
+		height: $spacer*1.5;
+	}
+	&.icon-lg {
+		height: $spacer*2;
+	}
+	&.icon-sm {
+		height: $spacer/2;
+	}
+}

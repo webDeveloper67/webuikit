@@ -1,12 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
 
 @import "./variables";
+@import "./mixins";
 @import "./utilities";
 @import "./navbar";
 @import "./dropdown";
 @import "./intro";
+@import "./buttons";
 @import "./social-icons";
+@import "./svg-icons";
 @import "./owl-carousel";
+@import "./icon-box";
+@import "./skew-bg";
 
 // Owl Carousel
 @import '~owl.carousel/dist/assets/owl.carousel.min.css';

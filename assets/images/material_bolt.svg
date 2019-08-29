@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="48px" viewBox="0 0 28 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>material_bolt</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-1" transform="translate(-467.000000, -1310.000000)" fill="#5558DB">
+            <g id="Features/1/White" transform="translate(0.000000, 1160.000000)">
+                <g id="feature-1" transform="translate(255.000000, 150.000000)">
+                    <path d="M226,0 C225.54968,5.56907035e-05 225.146941,0.28393428 224.990385,0.711647782 L212.332332,25.0227273 C212.116161,25.3697472 212.000976,25.7714849 212,26.1818182 C212,27.3868031 212.96431,28.3636364 214.153846,28.3636364 L224.923077,28.3636364 L224.923077,46.9090909 C224.923077,47.5115834 225.405232,48 226,48 C226.404096,48.0004803 226.774449,47.7717626 226.959134,47.4076713 L239.709735,22.913352 L239.705528,22.9090909 C239.896635,22.5779938 239.998204,22.2017159 240,21.8181818 C240,20.6131969 239.03569,19.6363636 237.846154,19.6363636 L227.076923,19.6363636 L227.076923,1.09090909 C227.076923,0.488416637 226.594768,0 226,0 Z" id="material_bolt"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
