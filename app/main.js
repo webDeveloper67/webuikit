@@ -1,33 +1,27 @@
-var swiperSlider = (function() {
-	if ($('.swiper-slider-fade').length !== 0) {
-		var swiper = new Swiper('.swiper-container', {
-			effect: 'fade', //other supported effects: coverflow, flip, cube, slide
-			pagination: null,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev',
-			autoplay: 5000,
-			speed: 1000,
-			spaceBetween: 0,
-			loop: true,
-			simulateTouch: true,
-			onSlideChangeEnd: function(swiper) {
-				$('.swiper-slide').each(function() {
-					if ($(this).index() === swiper.activeIndex) {
-						// Fadein in active slide
-						$(this).find('.slider-content').fadeIn(25);
-					} else {
-						// Fadeout in inactive slides
-						$(this).find('.slider-content').fadeOut(25);
-					}
-				});
-			}
-		});
-	}
-})();
+(function($) {
+	'use strict';
+
+	// Dropdown Menu
+	$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+		if (!$(this).next().hasClass('show')) {
+			$(this)
+				.parents('.dropdown-menu')
+				.first()
+				.find('.show')
+				.removeClass('show');
+		}
+		var $subMenu = $(this).next('.dropdown-menu');
+		$subMenu.toggleClass('show');
+
+		$(this)
+			.parents('li.nav-item.dropdown.show')
+			.on('hidden.bs.dropdown', function(e) {
+				$('.dropdown-submenu .show').removeClass('show');
+			});
+
+		return false;
+	});
+})(jQuery);
 
 //
 // Sticky Navbar

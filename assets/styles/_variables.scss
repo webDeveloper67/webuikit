@@ -112,3 +112,11 @@ $card-box-shadow: 0 .75rem 1.25rem .0625rem rgba($gray-700, .09) !default;
 
 $icon-box-max-width: 400px !default;
 $icon-box-icon-size: 70px !default;
+
+//== Border
+// -------------------------------------------------------
+
+$border-color: $gray-300;
+$line-border-color: $gray-500;
+$border-light-color: rgba($white, .14) !default;
+$border-radius: .3rem;

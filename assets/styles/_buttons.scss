@@ -82,6 +82,9 @@
 		font-size: $button-font-size-xs;
 		line-height: $btn-line-height-xs;
 	}
+	&.full-width {
+		width: 100%;
+	}
 }
 
 .btn-warning,
@@ -104,6 +107,42 @@
 
 	&:active {
 		box-shadow: 0 6px 8px .2px rgba($gray-700, .24) !important;
+	}
+}
+
+.btn-style-one {
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 0;
+	box-shadow: none;
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+	transition: all 0.3s ease-in-out 0s;
+	&:after {
+		content: "";
+		width: 160%;
+		height: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		opacity: 0;
+		z-index: -1;
+		transform: translateX(-50%) translateY(-50%) rotate(35deg);
+		transition: all 0.3s ease-in-out 0s;
+	}
+	&:hover:after {
+		height: 170%;
+		background: #fff;
+		opacity: 1;
+	}
+	&.primary {
+		border: 1px solid $accent;
+		background: $accent;
+		&:hover {
+			color: $accent;
+			border-color: #fff;
+		}
 	}
 }
 

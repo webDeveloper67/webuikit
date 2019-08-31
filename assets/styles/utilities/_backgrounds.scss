@@ -1,6 +1,14 @@
 .bg-access {
 	background-color: $accent;
 }
+
+.bg-dark {
+	background-color: #1f1f1f;
+}
+
+.gray-text {
+	color: #8c8c8c;
+}
 // Gradient background
 .bg-gradient {
 	@include gradient-background($gradient-color-1, $gradient-color-2);

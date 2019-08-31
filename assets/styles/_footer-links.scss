@@ -1,0 +1,89 @@
+//
+// Footer
+// --------------------------------------------------
+
+// Base Class
+.widget {
+	margin-bottom: ($spacer * 2.625);
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+.widget-categories {
+	ul {
+		display: block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		> li {
+			margin: 0;
+			> a {
+				display: block;
+				transition: color .25s;
+				color: $gray-700;
+				font-weight: 600;
+				text-decoration: none;
+				> span {
+					color: $gray-500 !important;
+					font-weight: 400;
+				}
+				> i {
+					display: inline-block;
+					margin-right: .3125rem;
+					vertical-align: middle;
+				}
+			}
+			&:hover > a,
+			&.active > a {
+				color: $primary !important;
+			}
+		}
+	}
+	> ul {
+		margin-top: -($spacer * .75);
+		> li {
+			border-bottom: 1px solid $border-color;
+			> a {
+				padding: ($spacer * .75) 0;
+			}
+			&:last-child {
+				border-bottom: 0;
+				> a {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+// Light Skin
+.widget-light-skin {
+	.widget-title {
+		border-bottom-color: $border-light-color;
+		color: rgba($white, .7);
+	}
+
+	// Categories widget
+	&.widget-categories {
+		ul > li {
+			> a {
+				transition: opacity .25s;
+				color: $white !important;
+				> span {
+					color: rgba($white, .5) !important;
+				}
+			}
+			&:hover > a,
+			&.active > a {
+				color: $white !important;
+				opacity: .6;
+			}
+		}
+		> ul > li {
+			border-bottom-color: $border-light-color;
+		}
+	}
+}
