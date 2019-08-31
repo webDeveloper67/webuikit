@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // Is the current build a development build
 const IS_DEV = process.env.NODE_ENV === 'dev';
@@ -9,7 +10,7 @@ const dirNode = 'node_modules';
 const dirApp = path.join(__dirname, 'app');
 const dirAssets = path.join(__dirname, 'assets');
 
-const appHtmlTitle = 'Webpack Boilerplate';
+const appHtmlTitle = 'Web UI KIT';
 
 /**
  * Webpack Configuration
@@ -61,7 +62,7 @@ module.exports = {
 			{
 				test: /\.scss/,
 				use: [
-					'style-loader',
+					IS_DEV !== 'dev' ? MiniCssExtractPlugin.loader : 'style-loader',
 					{
 						loader: 'css-loader',
 						options: {
