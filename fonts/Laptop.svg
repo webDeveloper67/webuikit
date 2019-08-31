@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="690px" height="470px" viewBox="0 0 690 470" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Laptop-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="95.3611898%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M91,0 L599,0 C615.568542,-3.04359188e-15 629,13.4314575 629,30 L629,450 L61,450 L61,30 C61,13.4314575 74.4314575,3.04359188e-15 91,0 Z" id="path-2"></path>
+        <linearGradient x1="50%" y1="99.740912%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#D0D0D0" offset="0%"></stop>
+            <stop stop-color="#E7E7E7" offset="100%"></stop>
+        </linearGradient>
+        <path d="M245,445 L445,445 L445,445 C445,450.522847 440.522847,455 435,455 L255,455 C249.477153,455 245,450.522847 245,445 Z" id="path-4"></path>
+        <rect id="path-5" x="91" y="30" width="508" height="390"></rect>
+    </defs>
+    <g id="Templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-1" transform="translate(-255.000000, -1876.000000)">
+            <g id="Laptop/1/Grey" transform="translate(0.000000, 1726.000000)">
+                <g id="Laptop-1" transform="translate(255.000000, 150.000000)">
+                    <g id="Laptop">
+                        <g id="Rectangle">
+                            <use fill="#EEEEEE" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <use fill-opacity="0.1" fill="url(#linearGradient-1)" fill-rule="evenodd" style="mix-blend-mode: multiply;" xlink:href="#path-2"></use>
+                            <path stroke-opacity="0.25" stroke="#FFFFFF" stroke-width="4.85701107" d="M63.4285055,447.571494 L626.571494,447.571494 L626.571494,30 C626.571494,14.7726841 614.227316,2.42850554 599,2.42850554 L91,2.42850554 C75.7726841,2.42850554 63.4285055,14.7726841 63.4285055,30 L63.4285055,447.571494 Z" stroke-linejoin="square"></path>
+                        </g>
+                        <path d="M0,445 L690,445 L690,445 C690,458.807119 678.807119,470 665,470 L25,470 C11.1928813,470 1.69088438e-15,458.807119 0,445 Z" id="Rectangle" fill="url(#linearGradient-3)"></path>
+                        <g id="Rectangle">
+                            <use fill="#EEEEEE" xlink:href="#path-4"></use>
+                            <use fill-opacity="0.1" fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" xlink:href="#path-4"></use>
+                        </g>
+                    </g>
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="Screen-Mask" fill="#0B162B" xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
